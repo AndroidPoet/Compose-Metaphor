@@ -1,14 +1,6 @@
 
 <h1 align="center"Compose Metaphor</h1>
 
-<p align="center">
-Material Motion system animations for Jetpack Compose.
-</p>
-
-
-
-
-
 
 <p align="center">
   <a href="https://devlibrary.withgoogle.com/authors/androidpoet"><img alt="Google" src="https://user-images.githubusercontent.com/13647384/162663007-d911f6ce-ac1b-4754-a63b-eadbef38087f.svg"/></a>
@@ -27,6 +19,9 @@ Material Motion system animations for Jetpack Compose.
 
 <p align="center">
 
+<p align="center">
+Material Motion system animations for Jetpack Compose.
+</p>
 
 
 
