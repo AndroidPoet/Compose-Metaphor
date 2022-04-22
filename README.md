@@ -20,7 +20,7 @@
 <p align="center">
 
 <p align="center">
-Material Motion system animations for Jetpack Compose.
+Material Motion system animations for Jetpack Compose
 </p>
 
 
