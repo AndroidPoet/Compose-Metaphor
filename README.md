@@ -104,10 +104,10 @@ fun AnimateVisibility() {
  MetaphorEnterAnimation.ExpandHorizontally
  MetaphorEnterAnimation.ExpandVertically
 ```
-  
-  
-  
-  ## Exit Animations
+
+
+
+## Exit Animations
 
 ```kotlin
  MetaphorEnterAnimation.FadeOut
@@ -123,7 +123,7 @@ fun AnimateVisibility() {
  MetaphorEnterAnimation.ShrinkHorizontally
  MetaphorEnterAnimation.ShrinkVertically
 ```
-  
+
 
 
 <a href="https://www.flaticon.com/free-icons/3d-modeling" title="3d modeling icons">3d modeling icons created by Good Ware - Flaticon</a>

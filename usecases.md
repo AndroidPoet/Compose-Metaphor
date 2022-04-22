@@ -1,7 +1,7 @@
 
-# Who's using Material Intro?
+# Who's using Compose Metaphor?
 
-If your project uses Material Intro, let me know by creating a new issue or PR! 🤗
+If your project uses Compose Metaphor, let me know by creating a new issue or PR! 🤗
 
 
 
