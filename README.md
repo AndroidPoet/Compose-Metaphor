@@ -74,7 +74,20 @@ fun AnimateVisibility() {
     )
   }
 
-  
+  Column(
+    modifier = Modifier
+      .fillMaxSize()
+      .padding(0.dp, 0.dp),
+    verticalArrangement = Arrangement.Bottom,
+    horizontalAlignment = Alignment.CenterHorizontally
+  ) {
+    Button(
+
+      onClick = { visible = !visible }
+    ) {
+      Text("Animate")
+    }
+  }
 }
 ```
 
