@@ -1,2 +1,2 @@
 # Compose-Metaphor
-Matwrial motion for jetpack compose
+Material Motion system animations for Jetpack Compose
