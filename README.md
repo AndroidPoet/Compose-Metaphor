@@ -87,6 +87,7 @@ fun AnimateVisibility() {
 ## Enter Animations
 
 ```kotlin
+ MetaphorEnterAnimation.FadeIn
  MetaphorEnterAnimation.SharedAxisXForward
  MetaphorEnterAnimation.SharedAxisYForward
  MetaphorEnterAnimation.SharedAxisZForward
