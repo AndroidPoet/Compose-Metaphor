@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'org.jetbrains.dokka'
+apply plugin: 'binary-compatibility-validator'
+apply from: "$rootDir/dependencies.gradle"
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.versionCode
+        versionName versions.versionName
+    }
+
+    resourcePrefix 'metaphor'
+
+    buildFeatures {
+        buildConfig false
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.1.1'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions.freeCompilerArgs += ["-Xexplicit-api=strict"]
+}
+
+apiValidation {
+
+    nonPublicMarkers += [
+            "kotlin.PublishedApi",
+    ]
+
+}
+
+dependencies {
+
+
+    implementation "androidx.core:core-ktx:$versions.ktx"
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation "com.google.android.material:material:$versions.material"
+    implementation "androidx.compose.animation:animation:$versions.animation"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$versions.runtime"
+
+
+}
+
+dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            noAndroidSdkLink.set(false)
+        }
+    }
+}
+
+
+allprojects {
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
+        }
+    }
+}
+
+apply plugin: "com.vanniktech.maven.publish"
+apply from: "$rootDir/spotless.gradle"

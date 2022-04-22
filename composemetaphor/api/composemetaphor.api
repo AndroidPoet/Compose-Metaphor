@@ -1,0 +1,74 @@
+public final class com/androidpoet/composemetaphor/AnimationProp {
+	public static final field $stable I
+	public fun <init> (IIILcom/androidpoet/composemetaphor/MetaphorEasing;F)V
+	public synthetic fun <init> (IIILcom/androidpoet/composemetaphor/MetaphorEasing;FILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public final fun component5 ()F
+	public final fun copy (IIILcom/androidpoet/composemetaphor/MetaphorEasing;F)Lcom/androidpoet/composemetaphor/AnimationProp;
+	public static synthetic fun copy$default (Lcom/androidpoet/composemetaphor/AnimationProp;IIILcom/androidpoet/composemetaphor/MetaphorEasing;FILjava/lang/Object;)Lcom/androidpoet/composemetaphor/AnimationProp;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDelay ()I
+	public final fun getEnterDuration ()I
+	public final fun getExitDuration ()I
+	public final fun getInitialAlpha ()F
+	public final fun getMetaphorEasing ()Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/androidpoet/composemetaphor/AnimationsExtenstionsKt {
+}
+
+public final class com/androidpoet/composemetaphor/ComposeMetaphorKt {
+	public static final fun Metaphor (ZLcom/androidpoet/composemetaphor/MetaphorEnterAnimation;Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;Lcom/androidpoet/composemetaphor/MetaphorEasing;IIILkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+}
+
+public final class com/androidpoet/composemetaphor/MetaphorEasing : java/lang/Enum {
+	public static final field FastOutLinearInEasing Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public static final field FastOutSlowInEasing Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public static final field LinearEasing Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public static final field LinearOutSlowInEasing Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public final fun getValue ()I
+	public static fun valueOf (Ljava/lang/String;)Lcom/androidpoet/composemetaphor/MetaphorEasing;
+	public static fun values ()[Lcom/androidpoet/composemetaphor/MetaphorEasing;
+}
+
+public final class com/androidpoet/composemetaphor/MetaphorEnterAnimation : java/lang/Enum {
+	public static final field ElevationScale Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field ExpandHorizontally Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field ExpandIn Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field ExpandVertically Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field FadeIn Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field ScaleIn Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SharedAxisXForward Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SharedAxisYForward Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SharedAxisZForward Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SlideIn Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SlideInHorizontally Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static final field SlideInVertically Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public final fun getValue ()I
+	public static fun valueOf (Ljava/lang/String;)Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+	public static fun values ()[Lcom/androidpoet/composemetaphor/MetaphorEnterAnimation;
+}
+
+public final class com/androidpoet/composemetaphor/MetaphorExitAnimation : java/lang/Enum {
+	public static final field ElevationScale Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field FadeOut Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field ScaleOut Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SharedAxisXBackward Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SharedAxisYBackward Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SharedAxisZBackward Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field ShrinkHorizontally Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field ShrinkOut Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field ShrinkVertically Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SlideOut Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SlideOutHorizontally Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static final field SlideOutVertically Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public final fun getValue ()I
+	public static fun valueOf (Ljava/lang/String;)Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+	public static fun values ()[Lcom/androidpoet/composemetaphor/MetaphorExitAnimation;
+}
+
