@@ -1,14 +1,6 @@
 
 <h1 align="center"Compose Metaphor</h1>
 
-<p align="center">
-Material Motion system animations for Jetpack Compose.
-</p>
-
-
-
-
-
 
 <p align="center">
   <a href="https://devlibrary.withgoogle.com/authors/androidpoet"><img alt="Google" src="https://user-images.githubusercontent.com/13647384/162663007-d911f6ce-ac1b-4754-a63b-eadbef38087f.svg"/></a>
@@ -27,6 +19,9 @@ Material Motion system animations for Jetpack Compose.
 
 <p align="center">
 
+<p align="center">
+Material Motion system animations for Jetpack Compose(early stage)
+</p>
 
 
 
@@ -79,7 +74,20 @@ fun AnimateVisibility() {
     )
   }
 
-  
+  Column(
+    modifier = Modifier
+      .fillMaxSize()
+      .padding(0.dp, 0.dp),
+    verticalArrangement = Arrangement.Bottom,
+    horizontalAlignment = Alignment.CenterHorizontally
+  ) {
+    Button(
+
+      onClick = { visible = !visible }
+    ) {
+      Text("Animate")
+    }
+  }
 }
 ```
 
@@ -92,6 +100,7 @@ fun AnimateVisibility() {
 ## Enter Animations
 
 ```kotlin
+ MetaphorEnterAnimation.FadeIn
  MetaphorEnterAnimation.SharedAxisXForward
  MetaphorEnterAnimation.SharedAxisYForward
  MetaphorEnterAnimation.SharedAxisZForward
@@ -126,11 +135,11 @@ fun AnimateVisibility() {
 
 
 
-<a href="https://www.flaticon.com/free-icons/3d-modeling" title="3d modeling icons">3d modeling icons created by Good Ware - Flaticon</a>
+Icon used:<a href="https://www.flaticon.com/free-icons/3d-modeling" title="3d modeling icons">3d modeling icons created by Good Ware - Flaticon</a>
 
 
 ## Find this library useful? :heart:
-Support it by joining __[stargazers](https://github.com/androidpoet/MaterialIntro/stargazers)__ for this repository. :star:
+Support it by joining __[stargazers](https://github.com/androidpoet/Compose-Metaphor/stargazers)__ for this repository. :star:
 
 # License
 ```xml
@@ -146,7 +155,7 @@ Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
-        limitations under the License.
+limitations under the License.
 ```
 
 
