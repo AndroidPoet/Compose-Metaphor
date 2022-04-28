@@ -133,8 +133,6 @@ fun AnimateVisibility() {
  MetaphorEnterAnimation.ShrinkVertically
 ```
 
-
-
 Icon used:<a href="https://www.flaticon.com/free-icons/3d-modeling" title="3d modeling icons">3d modeling icons created by Good Ware - Flaticon</a>
 
 
